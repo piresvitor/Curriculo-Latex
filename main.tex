@@ -1,0 +1,119 @@
+% Document class and basic packages
+\documentclass[a4paper]{article}
+
+% Essential packages
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{tabularx}
+
+% Document settings
+\textheight=10.2in
+\pagestyle{empty}
+\raggedright
+
+% Custom commands
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex}
+
+\newcommand{\lineunder}{
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header}[1]{
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+% Begin document
+\begin{document}
+    \vspace*{-40pt}
+
+    % Header section
+    \vspace*{-2pt}
+    \begin{center}
+        {\Huge \scshape {Vitor Gabriel de Campos Pires}}\\
+        \vspace*{2pt}
+        \ {Desenvolvedor de Software}\\
+        \vspace*{2pt}
+        \href{mailto:vitor.pires4@gmail.com}{vitor.pires4@gmail.com} |
+        \href{tel:+55}{(15) 98140-2298}\\
+        \vspace*{4pt}
+        \textbf{\href{https://www.linkedin.com/in/vitor-pires-13a075305/}{LinkedIn | }}
+        \textbf{\href{https://github.com/piresvitor}{GitHub}}
+    \end{center}
+
+    % Summary section
+    \header{Resumo}
+    \vspace{2mm}
+    Desenvolvedor Backend com experiência prática em projetos reais, atuando na construção de APIs REST, integração de sistemas e modelagem de dados. Forte domínio em Python (Flask) e Node.js (Fastify), com foco em aplicações robustas, documentação clara, testes e boas práticas. Experiência em bancos de dados relacionais e desenvolvimento de interfaces para suporte às soluções de backend.
+    \vspace{2mm}
+
+    % Experience section
+    \header{Experiência Profissional}
+    \vspace{2mm}
+
+    \textbf{Freelancer}\textbf{ | Desenvolvedor Full Stack} \hfill  Set 2024 - Presente\\
+    \vspace{-3mm}
+    \begin{itemize} \itemsep -3pt
+        \item \textbf{Soluções para Negócios Locais:} Desenvolvimento de soluções customizados para automação de processos em comércios reais (Varejo e Distribuição).
+        \item \textbf{Automação de Vendas:} Criação de um sistema de gestão de orçamentos para equipe de vendas externa (setor cerâmico), automatizando o cálculo de pedidos, geração dinâmica de PDFs e envio por e-mail, reduzindo o tempo de fechamento de vendas.
+        \item \textbf{Integração e Dados:} Modelagem e gerenciamento de bancos de dados PostgreSQL e MongoDB, utilizando ORMs modernos (Drizzle, SQLAlchemy) para otimização de queries SQL e redução de problemas de performance (resolução de N+1 queries).
+        \item \textbf{Engenharia de Backend:} Implementação de APIs REST robustas com autenticação JWT segura, validação de dados e tratamento de erros padronizado, focando na integridade e segurança.
+        \item \textbf{Desenvolvimento Web Responsivo:} Criação de interfaces administrativas intuitivas (Mobile-First) utilizando React.js e Tailwind CSS.
+        \item \textbf{Automação:} Criação de scripts em Python para automação de processos repetitivos e integração entre sistemas via APIs de terceiros.
+    \end{itemize}
+
+    % Projects section
+    \header{Projetos em Destaque}
+    \vspace{2mm}
+
+    \textbf{Mobiaccess}\text{ | Plataforma de Acessibilidade Urbana} \hfill \href{https://github.com/piresvitor/Mapa_Colaborativo_Acessibilidade}{GitHub Link}\\
+    \textit{Tecnologias: Node.js (Fastify), PostgreSQL (Drizzle), React, TypeScript, Vitest, Docker.}
+    \vspace{-3mm}
+    \begin{itemize} \itemsep -3pt
+        \item Desenvolvi uma plataforma Full Stack colaborativa para mapeamento de locais acessíveis, integrando geolocalização e autocomplete via Google Maps API.
+        \item Engenharia de backend cobrindo \textbf{33 endpoints} com \textbf{100\% de cobertura de testes E2E}, garantindo estabilidade, validação rigorosa de dados (Zod) e segurança.
+        \item Otimizei a performance do banco de dados utilizando agregações SQL avançadas via Drizzle ORM e containerização completa da aplicação com Docker.
+        \item Desenvolvimento de Dashboard analítico complexo para visualização de dados geográficos e relatórios da comunidade em tempo real.
+    \end{itemize}
+
+    \textbf{Solar Energy API}\text{ | Simulador de Viabilidade Energética} \hfill \href{https://github.com/piresvitor/Solar-Energy-API}{GitHub Link}\\
+    \textit{Tecnologias: Python, Flask, SQLAlchemy, SQLite, Swagger/OpenAPI, NumPy.}
+    \vspace{-3mm}
+    \begin{itemize} \itemsep -3pt
+        \item API RESTful para cálculos financeiros complexos, utilizando \textbf{NumPy} para processar histórico de consumo e gerar projeções de economia.
+        \item Documentação técnica completa e interativa implementada com \textbf{Swagger UI (OpenAPI)}, facilitando a integração por outros desenvolvedores.
+        \item Autenticação JWT para proteção de dados sensíveis de usuários.
+    \end{itemize}
+    \vspace{1mm}
+
+    % Skills section
+    \header{Habilidades Técnicas}
+    \vspace{2mm}
+    
+    \begin{tabular}{p{4.5cm}p{11.5cm}}
+        Linguagens: & Python, JavaScript (ES6+), TypeScript, SQL, Java, C \\
+        Backend: & Node.js, Fastify, Flask, Express, RESTful APIs \\
+        Bancos de Dados: & PostgreSQL, SQLite, MongoDB, Drizzle ORM, SQLAlchemy \\
+        Frontend: & React.js, Tailwind CSS, HTML, CSS, Responsive Design \\
+        Ferramentas \& DevOps: & Linux, Git, GitHub, Docker, Vitest, Swagger/OpenAPI, Postman \\
+    \end{tabular}
+    \vspace{2mm}
+
+    % Education section
+    \header{Formação Acadêmica}
+    \vspace{1mm}
+    \textbf{Centro Universitário Facens}\hfill Sorocaba, SP\\
+    Análise e Desenvolvimento de Sistemas \hfill 2024 - 2026 (Previsão)\\
+    \vspace{1mm}
+    
+    \textbf{ETEC - Escola Técnica Estadual de São Paulo}\hfill Tatuí, SP\\
+    Técnico em Informática \hfill 2012 - 2014\\
+
+\end{document}
