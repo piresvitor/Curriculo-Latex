@@ -7,7 +7,7 @@
 
 Este repositório contém o código-fonte em **LaTeX** do meu currículo profissional. O objetivo é manter um controle de versão da minha trajetória profissional e facilitar a geração de arquivos PDF atualizados com formatação tipográfica de alta qualidade.
 
-> **[📥 Clique aqui para baixar a versão em PDF mais recente](./vitor_pires_cv.pdf)**
+> **[📥 Clique aqui para baixar a versão em PDF mais recente](./Currículo.pdf)**
 
 ## 👨‍💻 Sobre Mim
 
